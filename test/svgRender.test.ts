@@ -47,12 +47,12 @@ describe('svgRender', () => {
     // The id of svg is dynamic, replace svgId with ''
     const svg = renderer.getSvgTemplate().replace(/svg\S{7}/g, '')
     expect(svg).toBe('<svg id="" xmlns="http://www.w3.org/2000/svg" version="1.1" '
-    + `font-size="${fontSize}px" viewBox="0 0 ${width} ${height}" width="${width}px" `
-    + `height="${height}px" font-family="${fontFamily}"><style>#{cursor:${cursor};`
-    + `opacity:${opacity};border-radius:${borderRadius}px;}# `
-    + `text::selection{background-color:${selectionbgColor};}</style><rect `
-    + `x="0" y="0" width="${width}" height="${height}" fill="${backgroundColor}" pointer-events="none"/>`
-    + `##{content}##</svg>`)
+      + `font-size="${fontSize}px" viewBox="0 0 ${width} ${height}" width="${width}px" `
+      + `height="${height}px" font-family="${fontFamily}"><style>#{cursor:${cursor};`
+      + `opacity:${opacity};border-radius:${borderRadius}px;}# `
+      + `text::selection{background-color:${selectionbgColor};}</style><rect `
+      + `x="0" y="0" width="${width}" height="${height}" fill="${backgroundColor}" pointer-events="none"/>`
+      + `##{content}##</svg>`)
   })
 
   const text = `哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈

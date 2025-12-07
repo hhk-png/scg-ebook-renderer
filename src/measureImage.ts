@@ -43,7 +43,8 @@ export async function measureImage(src: string): Promise<Measurement> {
     imageMeasureCache.set(src, measure)
     return measure
   }
-  catch (e) {
+  // eslint-disable-next-line unused-imports/no-unused-vars
+  catch (_) {
     console.warn(`measure image failed: ${src}, it will return { width: 50, height: 50}`)
     return {
       width: 50,
